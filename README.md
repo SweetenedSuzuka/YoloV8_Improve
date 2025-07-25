@@ -68,7 +68,7 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 训练模型
 
-在DataSet的all_images、all_txt、all_xml中放入你的数据集，然后用datasetPartitioning.py划分数据集，最后对应的训练脚本训练即可。
+在 `DataSet` 的 `all_images` 、 `all_txt` 、 `all_xml` 中放入你的数据集，然后用 `datasetPartitioning.py` 划分数据集，最后对应的训练脚本训练即可。
 
 # 进一步改进
 
