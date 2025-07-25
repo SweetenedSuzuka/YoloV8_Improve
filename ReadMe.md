@@ -19,13 +19,14 @@
 python -m pip install --upgrade pip -i https://pypi.mirrors.ustc.edu.cn/simple
 ```
 
-## 安装 PyTorch 和 CUDA 11.7 支持
+## 安装 PyTorch 和 CUDA 支持
+以PyTorch1.13.1+cu117为例：
 ```
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1+cu117 \
 -i https://pypi.tuna.tsinghua.edu.cn/simple \
 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
-安装完成后可以使用 ```pip list``` 验证版本。
+安装完成后可以使用 `pip list` 验证版本。
 
 ## 安装项目依赖
 cd进入项目目录并执行以下命令：
@@ -63,5 +64,20 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
     └── datasetPartitioning.py # 数据集划分脚本
 ```
 
-在DataSet的all_images、all_txt、all_xml中放入你的数据集，然后使用对应的训练脚本训练即可。
+# 训练模型
+
+在DataSet的all_images、all_txt、all_xml中放入你的数据集，然后用datasetPartitioning.py划分数据集，最后对应的训练脚本训练即可。
+
+# 进一步改进
+
 本项目未对模型结构进行修改，如果要指定新的数据集目录或修改配置、增减模块，参考原版YoloV8的文档修改脚本配置即可。
+
+# 参考资料
+
+这个项目是毕业设计的一部分，课题是研究如何提升YoloV8的小目标识别能力，其中参考的学术资料在 `REFERENCES.md` 中完整列出。
+
+This project was developed as part of a graduation thesis focused on improving the YOLOv8 object detection framework. The following academic works and implementations were referenced during the research and development process:
+
+Please refer to `REFERENCES.md` for the full list of academic sources consulted.
+
+> This project is for academic and research purposes only. Some parts are inspired by existing research papers and public implementations. If any rights are infringed, please contact for removal.
