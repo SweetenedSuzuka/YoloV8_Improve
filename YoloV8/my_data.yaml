@@ -1,0 +1,13 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+
+path: D:\python\project_bysj\DataSet # dataset root dir
+train: images/train/  # train images
+val: images/val/  # val images
+test: images/test/ # test images (optional)
+
+nc: 2
+
+# Classes
+names:
+  0: Car
+  1: Large_Truck
