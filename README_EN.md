@@ -1,3 +1,5 @@
+Languages: [中文](README.md) | [English](README_EN.md)
+
 # Project Overview
 
 This project is based on YOLOv8 and introduces several architectural enhancements to improve its performance in small object detection scenarios. The improvements include:
